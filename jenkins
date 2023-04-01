@@ -1,8 +1,8 @@
 pipeline{
-agent any
-stages{
-stage('build'){
-steps{
+ agent any
+  stages{
+   stage('build'){
+    steps{
 echo 'building a file'
 }
 }
@@ -14,5 +14,7 @@ echo 'testing a file'
 stage('deploy'){
 steps{
 echo 'deploying a file'
+}
+}
 }
 }
